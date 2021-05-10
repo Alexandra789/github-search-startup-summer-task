@@ -1,0 +1,41 @@
+.profile {
+    .profile-content {
+        display: inline-block;
+    margin: 39px 0px 96px 57px;
+        .user-image {
+                    border-radius: 50%;
+                }
+        .name {
+            margin-top: 29px;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+        .username {
+            font-size: 18px;
+            color: #0064EB;
+        }
+        .followers-wrapper {
+            display: flex;
+            margin-top: 25px;
+    justify-content: space-between;
+
+            .wrap {
+                display: flex;
+                align-items: flex-start;
+                img {
+                    margin-right: 10px;
+                }
+                .followers {
+                }
+            }
+        }
+        .title {
+        }
+        .repositories-wrapper {
+            .name {
+            }
+            .description {
+            }
+        }
+    }
+}

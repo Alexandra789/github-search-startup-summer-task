@@ -1,0 +1,43 @@
+.profile .profile-content {
+  display: inline-block;
+  margin: 39px 0px 96px 57px;
+}
+
+.profile .profile-content .user-image {
+  border-radius: 50%;
+}
+
+.profile .profile-content .name {
+  margin-top: 29px;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.profile .profile-content .username {
+  font-size: 18px;
+  color: #0064EB;
+}
+
+.profile .profile-content .followers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile .profile-content .followers-wrapper .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.profile .profile-content .followers-wrapper .wrap img {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=Profile.css.map */
