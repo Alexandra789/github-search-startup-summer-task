@@ -10,13 +10,6 @@
   margin-right: 22px;
 }
 
-.header .header-content .input-search-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  place-self: center;
-}
-
 .header .header-content .input-search-container .icon-search {
   position: absolute;
   padding: 13px 11px 12px 19px;
@@ -47,5 +40,11 @@
 
 .header .header-content .input-search-container .input-search::placeholder {
   font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .input-search {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

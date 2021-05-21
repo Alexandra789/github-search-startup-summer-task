@@ -1,0 +1,106 @@
+.repository .repository-content {
+  margin-right: 41px;
+  margin-top: 28px;
+}
+
+.repository .repository-content .title {
+  font-size: 32px;
+  margin-bottom: 29px;
+  font-weight: 600;
+}
+
+.repository .repository-content .repositories-wrapper {
+  background: #ffffff;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 32px;
+  margin-bottom: 24px;
+}
+
+.repository .repository-content .repositories-wrapper .name {
+  color: #0064eb;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.repository .repository-content .repositories-wrapper .description {
+  word-break: break-word;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.repository .repository-not-found {
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.repository .repository-not-found .text {
+  margin-top: 48px;
+  text-align: center;
+  font-size: 22px;
+  color: #808080;
+}
+
+@media (max-width: 767px) {
+  .repository-content {
+    margin-right: 0px !important;
+  }
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Repository.css.map */

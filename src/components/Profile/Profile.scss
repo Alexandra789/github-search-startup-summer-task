@@ -1,41 +1,49 @@
 .profile {
     .profile-content {
         display: inline-block;
-    margin: 39px 0px 96px 57px;
+        margin: 39px 0px 96px 42px;
+
         .user-image {
-                    border-radius: 50%;
-                }
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+        }
+
         .name {
             margin-top: 29px;
             font-size: 26px;
-            margin-bottom: 12px;
+            margin-bottom: 2px;
+            font-weight: 600;
         }
+
         .username {
             font-size: 18px;
-            color: #0064EB;
+            color: #0064eb;
         }
+
         .followers-wrapper {
             display: flex;
             margin-top: 25px;
-    justify-content: space-between;
+            justify-content: space-between;
 
             .wrap {
                 display: flex;
                 align-items: flex-start;
+
                 img {
-                    margin-right: 10px;
-                }
-                .followers {
+                    margin-right: 5px;
                 }
             }
         }
-        .title {
-        }
-        .repositories-wrapper {
-            .name {
-            }
-            .description {
-            }
-        }
+    }
+}
+
+@media (max-width: 767px) {
+    .profile {
+        text-align-last: center;
+    }
+
+    .profile-content {
+        margin: 39px 0px 0px 0px !important;
     }
 }

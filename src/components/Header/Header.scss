@@ -3,16 +3,17 @@
         background: #0064eb;
         padding: 16px 41px;
         display: flex;
+
         .logo {
             margin-right: 22px;
         }
+
         .input-search-container {
-            align-items: center;
-            place-self: center;
             .icon-search {
                 position: absolute;
                 padding: 13px 11px 12px 19px;
             }
+
             .input-search {
                 width: 500px;
                 height: 40px;
@@ -22,10 +23,17 @@
                 padding-left: 41px;
                 padding-right: 12px;
                 padding-bottom: 2px;
-                &::placeholder{
+
+                &::placeholder {
                     font-size: 14px;
                 }
             }
         }
+    }
+}
+
+@media (max-width: 640px) {
+    .input-search {
+        width: 100% !important;
     }
 }

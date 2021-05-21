@@ -1,21 +1,24 @@
 .profile .profile-content {
   display: inline-block;
-  margin: 39px 0px 96px 57px;
+  margin: 39px 0px 96px 42px;
 }
 
 .profile .profile-content .user-image {
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
 }
 
 .profile .profile-content .name {
   margin-top: 29px;
   font-size: 26px;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
+  font-weight: 600;
 }
 
 .profile .profile-content .username {
   font-size: 18px;
-  color: #0064EB;
+  color: #0064eb;
 }
 
 .profile .profile-content .followers-wrapper {
@@ -38,6 +41,15 @@
 }
 
 .profile .profile-content .followers-wrapper .wrap img {
-  margin-right: 10px;
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  .profile {
+    text-align-last: center;
+  }
+  .profile-content {
+    margin: 39px 0px 0px 0px !important;
+  }
 }
 /*# sourceMappingURL=Profile.css.map */

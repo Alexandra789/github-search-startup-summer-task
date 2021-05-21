@@ -1,4 +1,4 @@
-.search-not-found .search-not-found-content {
+.search-result .search-result-content {
   height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,8 +15,11 @@
           justify-content: center;
 }
 
-.search-not-found .search-not-found-content .text {
+.search-result .search-result-content .text {
+  max-width: 210px;
+  margin-top: 35px;
+  text-align: center;
   font-size: 22px;
   color: #808080;
 }
-/*# sourceMappingURL=SearchNotFound.css.map */
+/*# sourceMappingURL=SearchResult.css.map */
