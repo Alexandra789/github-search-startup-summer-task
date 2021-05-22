@@ -12,21 +12,10 @@
 .repository .repository-content .repositories-wrapper {
   background: #ffffff;
   border-radius: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   padding: 24px 32px;
   margin-bottom: 24px;
+  overflow: hidden;
+  min-height: 124px;
 }
 
 .repository .repository-content .repositories-wrapper .name {
@@ -36,10 +25,43 @@
 }
 
 .repository .repository-content .repositories-wrapper .description {
+  height: 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   word-break: break-word;
   margin-top: 16px;
-  margin-bottom: 0px;
   font-size: 16px;
+}
+
+.repository .repository-content .pagination {
+  float: right;
+  font-size: 14px;
+  color: #808080;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.repository .repository-content .pagination li {
+  margin-left: 16px;
+  padding: 2px 6px;
+}
+
+.repository .repository-content .pagination .next:hover, .repository .repository-content .pagination .next:focus,
+.repository .repository-content .pagination .previous:hover, .repository .repository-content .pagination .previous:focus {
+  color: #0064EB;
+}
+
+.repository .repository-content .pagination .active {
+  background: #0064EB;
+  border-radius: 3px;
+  color: white;
+}
+
+.repository .repository-content .pagination .previous, .repository .repository-content .pagination .next {
+  font-weight: 600;
 }
 
 .repository .repository-not-found {
