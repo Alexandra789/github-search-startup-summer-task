@@ -49,8 +49,10 @@
   padding: 2px 6px;
 }
 
-.repository .repository-content .pagination .next:hover, .repository .repository-content .pagination .next:focus,
-.repository .repository-content .pagination .previous:hover, .repository .repository-content .pagination .previous:focus {
+.repository .repository-content .pagination .next:hover,
+.repository .repository-content .pagination .next:focus,
+.repository .repository-content .pagination .previous:hover,
+.repository .repository-content .pagination .previous:focus {
   color: #0064EB;
 }
 
@@ -60,7 +62,8 @@
   color: white;
 }
 
-.repository .repository-content .pagination .previous, .repository .repository-content .pagination .next {
+.repository .repository-content .pagination .previous,
+.repository .repository-content .pagination .next {
   font-weight: 600;
 }
 

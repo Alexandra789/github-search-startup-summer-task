@@ -5,14 +5,13 @@ import ReactPaginate from 'react-paginate';
 export default function Repository(props) {
     const PAGE_SIZE = 4;
     let results_navigation = [];
-    
+
     const navigation = (data) => {
         props.setCurrentPage(data.selected);
     }
     for (let i = props.currentPage * PAGE_SIZE; i < (props.currentPage + 1) * PAGE_SIZE; i++) {
-            results_navigation.push(i);
+        results_navigation.push(i);
     }
-    console.log(props.reposInfo);
     return (
         <div className="col-xl-8 col-ms-12 col-lg-7 col-md-6">
             <div className="repository">

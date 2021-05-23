@@ -42,6 +42,40 @@
   font-size: 14px;
 }
 
+.header .error-section {
+  margin-top: 28px;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .error-section .error-icon {
+  width: 110px;
+  height: 110px;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.header .error-section .error-message {
+  margin-top: 48px;
+  font-size: 22px;
+  color: #808080;
+  margin-top: 48px;
+  text-align: center;
+  padding: 0 15px;
+}
+
 @media (max-width: 640px) {
   .input-search {
     width: 100% !important;

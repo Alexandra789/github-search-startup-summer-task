@@ -16,7 +16,7 @@
             margin-bottom: 24px;
             overflow: hidden;
             min-height: 124px;
-            
+
             .name {
                 color: #0064eb;
                 font-size: 24px;
@@ -38,22 +38,28 @@
             float: right;
             font-size: 14px;
             color: #808080;
-            user-select: none; 
+            user-select: none;
+
             li {
                 margin-left: 16px;
                 padding: 2px 6px;
             }
-            .next:hover, .next:focus,
-            .previous:hover, .previous:focus{
+
+            .next:hover,
+            .next:focus,
+            .previous:hover,
+            .previous:focus {
                 color: #0064EB;
             }
+
             .active {
                 background: #0064EB;
                 border-radius: 3px;
                 color: white;
             }
 
-            .previous,.next {
+            .previous,
+            .next {
                 font-weight: 600;
             }
         }

@@ -30,6 +30,30 @@
             }
         }
     }
+
+    .error-section {
+        margin-top: 28px;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .error-icon {
+            width: 110px;
+            height: 110px;
+            filter: opacity(0.5);
+        }
+
+        .error-message {
+            margin-top: 48px;
+            font-size: 22px;
+            color: #808080;
+            margin-top: 48px;
+            text-align: center;
+            padding: 0 15px
+        }
+    }
 }
 
 @media (max-width: 640px) {

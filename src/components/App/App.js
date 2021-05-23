@@ -12,22 +12,23 @@ function App() {
   const [searchNotFound, setSearchNotFound] = useState(false);
   const [loader, setLoader] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
-  console.log(userInfo);
-  // console.log(reposInfo);
-
+  const [responseStatus, setResponseStatus] = useState(false)
+  
   return (
     <div className="App">
-      <Header setUserInfo={setUserInfo} setSearchNotFound={setSearchNotFound} setReposInfo={setReposInfo} setSearchResult={setSearchResult} setLoader={setLoader} />
-      <SearchResult loader={loader} searchResult={searchResult} searchNotFound={searchNotFound} />
+      <Header loader={loader} setUserInfo={setUserInfo} setSearchNotFound={setSearchNotFound}
+        setReposInfo={setReposInfo} setSearchResult={setSearchResult}
+        setLoader={setLoader} setResponseStatus={setResponseStatus}
+        responseStatus={responseStatus}
+      />
+      <SearchResult loader={loader} responseStatus={responseStatus} searchResult={searchResult} searchNotFound={searchNotFound} responseStatus={responseStatus}/>
       <div className={loader ? "loader-wrapper" : 'd-none'}>
         <div className="loader" ></div>
       </div>
-      <div className={userInfo  && !loader ? "d-flex flex-wrap" : "d-none"}>
+      <div className={userInfo && !loader ? "d-flex flex-wrap" : "d-none"}>
         <Profile userInfo={userInfo} />
-        <Repository reposInfo={reposInfo} currentPage={currentPage} setCurrentPage={setCurrentPage} userInfo={userInfo}/>
-        {/* <ReactPaginate/> */}
+        <Repository reposInfo={reposInfo} currentPage={currentPage} setCurrentPage={setCurrentPage} userInfo={userInfo} />
       </div>
-
     </div>
   );
 }
