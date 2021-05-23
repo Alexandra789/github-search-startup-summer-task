@@ -13,15 +13,15 @@ function App() {
   const [loader, setLoader] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
   const [responseStatus, setResponseStatus] = useState(false)
-  
+
   return (
     <div className="App">
       <Header setUserInfo={setUserInfo} setSearchNotFound={setSearchNotFound}
         setReposInfo={setReposInfo} setSearchResult={setSearchResult}
         setLoader={setLoader} setResponseStatus={setResponseStatus}
-        responseStatus={responseStatus}
+        responseStatus={responseStatus} setCurrentPage={setCurrentPage}
       />
-      <SearchResult loader={loader} searchResult={searchResult} searchNotFound={searchNotFound} responseStatus={responseStatus}/>
+      <SearchResult  loader={loader} searchResult={searchResult} searchNotFound={searchNotFound} responseStatus={responseStatus}/>
       <div className={loader ? "loader-wrapper" : 'd-none'}>
         <div className="loader" ></div>
       </div>

@@ -1,17 +1,36 @@
 import './Repository.css';
 import reposIcon from '../../icons/repos-not-found.svg'
 import ReactPaginate from 'react-paginate';
+import { useEffect, useRef } from 'react';
+
 
 export default function Repository(props) {
     const PAGE_SIZE = 4;
     let results_navigation = [];
+    let initCurrentPage;
+
+    const usePreviousValue = value => {
+        const ref = useRef();
+        useEffect(() => {
+            ref.current = value;
+        });
+        return ref.current;
+    };
+
+    const prev = usePreviousValue(props.userInfo);
+
+    if (prev !== props.userInfo) {
+        initCurrentPage = 0;
+    }
 
     const navigation = (data) => {
         props.setCurrentPage(data.selected);
     }
+    
     for (let i = props.currentPage * PAGE_SIZE; i < (props.currentPage + 1) * PAGE_SIZE; i++) {
         results_navigation.push(i);
     }
+
     return (
         <div className="col-xl-8 col-ms-12 col-lg-7 col-md-6">
             <div className="repository">
@@ -28,10 +47,14 @@ export default function Repository(props) {
                         onPageChange={navigation}
                         containerClassName={'pagination'}
                         activeClassName={'active'}
+                        pageClassName={'page'}
                         previousLabel={'<'}
                         nextLabel={'>'}
                         marginPagesDisplayed={1}
-                        pageRangeDisplayed={2} />
+                        pageRangeDisplayed={2}
+                        initialPage={props.currentPage}
+                        forcePage={initCurrentPage}
+                    />
                 </div>
                 <div className={props.reposInfo[0].length === 0 ? "repository-not-found" : "d-none"}>
                     <img src={reposIcon} alt="icon" />

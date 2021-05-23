@@ -57,6 +57,7 @@ export default function Header(props) {
         searchInput.addEventListener('keydown', async (e) => {
             if (e.keyCode === KEY_CODE_ENTER && searchInput.value !== '') {
                 props.setUserInfo(null);
+                props.setCurrentPage(0);
                 fetch(url + searchInput.value).then((response) => {
                     if (response.status === ERROR_STATUS_CODE) {
                         props.setResponseStatus(true);
