@@ -16,12 +16,12 @@ function App() {
   
   return (
     <div className="App">
-      <Header loader={loader} setUserInfo={setUserInfo} setSearchNotFound={setSearchNotFound}
+      <Header setUserInfo={setUserInfo} setSearchNotFound={setSearchNotFound}
         setReposInfo={setReposInfo} setSearchResult={setSearchResult}
         setLoader={setLoader} setResponseStatus={setResponseStatus}
         responseStatus={responseStatus}
       />
-      <SearchResult loader={loader} responseStatus={responseStatus} searchResult={searchResult} searchNotFound={searchNotFound} responseStatus={responseStatus}/>
+      <SearchResult loader={loader} searchResult={searchResult} searchNotFound={searchNotFound} responseStatus={responseStatus}/>
       <div className={loader ? "loader-wrapper" : 'd-none'}>
         <div className="loader" ></div>
       </div>
