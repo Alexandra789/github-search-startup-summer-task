@@ -10,12 +10,12 @@
 }
 
 .repository .repository-content .repositories-wrapper {
-  background: #ffffff;
+  background: #fff;
   border-radius: 6px;
-  padding: 24px 32px;
+  padding: 18px 32px;
   margin-bottom: 24px;
   overflow: hidden;
-  min-height: 124px;
+  max-height: 110px;
 }
 
 .repository .repository-content .repositories-wrapper .name {
